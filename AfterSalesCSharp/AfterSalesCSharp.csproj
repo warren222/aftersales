@@ -67,65 +67,65 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>asDS.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CallinTableClass.cs" />
-    <Compile Include="concerndetailFRM.cs">
+    <Compile Include="classes\CallinTableClass.cs" />
+    <Compile Include="forms\concerndetailFRM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="concerndetailFRM.Designer.cs">
+    <Compile Include="forms\concerndetailFRM.Designer.cs">
       <DependentUpon>concerndetailFRM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="newcallinclass.cs" />
-    <Compile Include="newQUform.cs">
+    <Compile Include="classes\newcallinclass.cs" />
+    <Compile Include="forms\newQUform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="newQUform.Designer.cs">
+    <Compile Include="forms\newQUform.Designer.cs">
       <DependentUpon>newQUform.cs</DependentUpon>
     </Compile>
-    <Compile Include="newSrevicingFRM.cs">
+    <Compile Include="forms\newSrevicingFRM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="newSrevicingFRM.Designer.cs">
+    <Compile Include="forms\newSrevicingFRM.Designer.cs">
       <DependentUpon>newSrevicingFRM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="quClass.cs" />
-    <Compile Include="questionnaireFRM.cs">
+    <Compile Include="classes\quClass.cs" />
+    <Compile Include="forms\questionnaireFRM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="questionnaireFRM.Designer.cs">
+    <Compile Include="forms\questionnaireFRM.Designer.cs">
       <DependentUpon>questionnaireFRM.cs</DependentUpon>
     </Compile>
-    <Compile Include="quREPORTfrm.cs">
+    <Compile Include="forms\quREPORTfrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="quREPORTfrm.Designer.cs">
+    <Compile Include="forms\quREPORTfrm.Designer.cs">
       <DependentUpon>quREPORTfrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="searchresultFRM.cs">
+    <Compile Include="forms\searchresultFRM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="searchresultFRM.Designer.cs">
+    <Compile Include="forms\searchresultFRM.Designer.cs">
       <DependentUpon>searchresultFRM.cs</DependentUpon>
     </Compile>
-    <Compile Include="ServicingClass.cs" />
-    <Compile Include="sql.cs" />
-    <EmbeddedResource Include="concerndetailFRM.resx">
+    <Compile Include="classes\ServicingClass.cs" />
+    <Compile Include="classes\sql.cs" />
+    <EmbeddedResource Include="forms\concerndetailFRM.resx">
       <DependentUpon>concerndetailFRM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newQUform.resx">
+    <EmbeddedResource Include="forms\newQUform.resx">
       <DependentUpon>newQUform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newSrevicingFRM.resx">
+    <EmbeddedResource Include="forms\newSrevicingFRM.resx">
       <DependentUpon>newSrevicingFRM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -137,14 +137,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="questionnaireFRM.resx">
+    <EmbeddedResource Include="forms\questionnaireFRM.resx">
       <DependentUpon>questionnaireFRM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="quREPORT.rdlc" />
-    <EmbeddedResource Include="quREPORTfrm.resx">
+    <EmbeddedResource Include="reports\quREPORT.rdlc" />
+    <EmbeddedResource Include="forms\quREPORTfrm.resx">
       <DependentUpon>quREPORTfrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="searchresultFRM.resx">
+    <EmbeddedResource Include="forms\searchresultFRM.resx">
       <DependentUpon>searchresultFRM.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="asDS.xsc">
@@ -173,6 +173,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
