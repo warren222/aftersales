@@ -46,6 +46,8 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.questionGRID.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.questionGRID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.questionGRID.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.questionGRID.ColumnHeadersHeight = 30;
             this.questionGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
@@ -55,6 +57,7 @@
             this.questionGRID.Name = "questionGRID";
             this.questionGRID.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Silver;
             this.questionGRID.ReadOnly = true;
+            this.questionGRID.RowHeadersVisible = false;
             this.questionGRID.RowHeadersWidth = 40;
             this.questionGRID.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.questionGRID.RowTemplate.Height = 27;
@@ -88,6 +91,8 @@
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             this.answerGRID.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.answerGRID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.answerGRID.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.answerGRID.ColumnHeadersHeight = 30;
             this.answerGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
@@ -96,6 +101,7 @@
             this.answerGRID.Name = "answerGRID";
             this.answerGRID.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Silver;
             this.answerGRID.ReadOnly = true;
+            this.answerGRID.RowHeadersVisible = false;
             this.answerGRID.RowHeadersWidth = 40;
             this.answerGRID.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.answerGRID.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
@@ -126,6 +132,7 @@
             this.ClientSize = new System.Drawing.Size(1007, 520);
             this.Controls.Add(this.answerGRID);
             this.Controls.Add(this.questionGRID);
+            this.MaximizeBox = false;
             this.Name = "concerndetailFRM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Style = MetroFramework.MetroColorStyle.Red;

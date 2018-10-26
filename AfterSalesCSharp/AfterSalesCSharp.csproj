@@ -68,11 +68,11 @@
       <DependentUpon>asDS.xsd</DependentUpon>
     </Compile>
     <Compile Include="classes\CallinTableClass.cs" />
-    <Compile Include="forms\concerndetailFRM.cs">
+    <Compile Include="forms\convoFRM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\concerndetailFRM.Designer.cs">
-      <DependentUpon>concerndetailFRM.cs</DependentUpon>
+    <Compile Include="forms\convoFRM.Designer.cs">
+      <DependentUpon>convoFRM.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Form1.cs">
       <SubType>Form</SubType>
@@ -81,6 +81,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="classes\newcallinclass.cs" />
+    <Compile Include="forms\itemfinderFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\itemfinderFRM.Designer.cs">
+      <DependentUpon>itemfinderFRM.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\newQUform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,11 +122,14 @@
     </Compile>
     <Compile Include="classes\ServicingClass.cs" />
     <Compile Include="classes\sql.cs" />
-    <EmbeddedResource Include="forms\concerndetailFRM.resx">
-      <DependentUpon>concerndetailFRM.cs</DependentUpon>
+    <EmbeddedResource Include="forms\convoFRM.resx">
+      <DependentUpon>convoFRM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\itemfinderFRM.resx">
+      <DependentUpon>itemfinderFRM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\newQUform.resx">
       <DependentUpon>newQUform.cs</DependentUpon>

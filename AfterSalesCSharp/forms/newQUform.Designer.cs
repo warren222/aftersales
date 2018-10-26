@@ -39,6 +39,10 @@
             this.scopeofworks = new MetroFramework.Controls.MetroTextBox();
             this.kryptonLabel10 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroTextButton2 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.itemno = new MetroFramework.Controls.MetroTextBox();
             this.wdwloc = new MetroFramework.Controls.MetroTextBox();
             this.itemGRID = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
@@ -62,9 +66,7 @@
             this.aseno = new MetroFramework.Controls.MetroTextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroTextButton1 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
-            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kno = new MetroFramework.Controls.MetroTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemGRID)).BeginInit();
@@ -250,6 +252,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.kno);
+            this.panel2.Controls.Add(this.metroTextButton2);
             this.panel2.Controls.Add(this.kryptonLabel3);
             this.panel2.Controls.Add(this.kryptonLabel5);
             this.panel2.Controls.Add(this.kryptonLabel4);
@@ -268,13 +272,63 @@
             this.panel2.Size = new System.Drawing.Size(1056, 323);
             this.panel2.TabIndex = 488;
             // 
+            // metroTextButton2
+            // 
+            this.metroTextButton2.BackColor = System.Drawing.Color.DarkGray;
+            this.metroTextButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroTextButton2.Image = null;
+            this.metroTextButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroTextButton2.Location = new System.Drawing.Point(199, 45);
+            this.metroTextButton2.Name = "metroTextButton2";
+            this.metroTextButton2.Size = new System.Drawing.Size(74, 28);
+            this.metroTextButton2.Style = MetroFramework.MetroColorStyle.Silver;
+            this.metroTextButton2.TabIndex = 496;
+            this.metroTextButton2.Text = "FIND";
+            this.metroTextButton2.UseCustomBackColor = true;
+            this.metroTextButton2.UseSelectable = true;
+            this.metroTextButton2.UseVisualStyleBackColor = false;
+            this.metroTextButton2.Click += new System.EventHandler(this.metroTextButton2_Click);
+            // 
+            // kryptonLabel3
+            // 
+            this.kryptonLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonLabel3.Location = new System.Drawing.Point(13, 155);
+            this.kryptonLabel3.Name = "kryptonLabel3";
+            this.kryptonLabel3.Size = new System.Drawing.Size(72, 22);
+            this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel3.TabIndex = 495;
+            this.kryptonLabel3.Values.Text = "Unit Price:";
+            // 
+            // kryptonLabel5
+            // 
+            this.kryptonLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonLabel5.Location = new System.Drawing.Point(11, 223);
+            this.kryptonLabel5.Name = "kryptonLabel5";
+            this.kryptonLabel5.Size = new System.Drawing.Size(87, 22);
+            this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel5.TabIndex = 494;
+            this.kryptonLabel5.Values.Text = "Net Amount:";
+            // 
+            // kryptonLabel4
+            // 
+            this.kryptonLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonLabel4.Location = new System.Drawing.Point(11, 189);
+            this.kryptonLabel4.Name = "kryptonLabel4";
+            this.kryptonLabel4.Size = new System.Drawing.Size(35, 22);
+            this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel4.TabIndex = 493;
+            this.kryptonLabel4.Values.Text = "Qty:";
+            // 
             // itemno
             // 
             // 
             // 
             // 
             this.itemno.CustomButton.Image = null;
-            this.itemno.CustomButton.Location = new System.Drawing.Point(191, 2);
+            this.itemno.CustomButton.Location = new System.Drawing.Point(156, 2);
             this.itemno.CustomButton.Name = "";
             this.itemno.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.itemno.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -285,7 +339,7 @@
             this.itemno.DisplayIcon = true;
             this.itemno.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.itemno.Lines = new string[0];
-            this.itemno.Location = new System.Drawing.Point(11, 16);
+            this.itemno.Location = new System.Drawing.Point(11, 45);
             this.itemno.MaxLength = 32767;
             this.itemno.Multiline = true;
             this.itemno.Name = "itemno";
@@ -295,7 +349,7 @@
             this.itemno.SelectionLength = 0;
             this.itemno.SelectionStart = 0;
             this.itemno.ShowClearButton = true;
-            this.itemno.Size = new System.Drawing.Size(217, 28);
+            this.itemno.Size = new System.Drawing.Size(182, 28);
             this.itemno.Style = MetroFramework.MetroColorStyle.Red;
             this.itemno.TabIndex = 41;
             this.itemno.UseCustomForeColor = true;
@@ -321,7 +375,7 @@
             this.wdwloc.DisplayIcon = true;
             this.wdwloc.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.wdwloc.Lines = new string[0];
-            this.wdwloc.Location = new System.Drawing.Point(11, 50);
+            this.wdwloc.Location = new System.Drawing.Point(11, 79);
             this.wdwloc.MaxLength = 32767;
             this.wdwloc.Multiline = true;
             this.wdwloc.Name = "wdwloc";
@@ -354,6 +408,7 @@
             this.itemGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.itemGRID.Cursor = System.Windows.Forms.Cursors.Hand;
             this.itemGRID.Location = new System.Drawing.Point(279, 0);
+            this.itemGRID.MultiSelect = false;
             this.itemGRID.Name = "itemGRID";
             this.itemGRID.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Silver;
             this.itemGRID.ReadOnly = true;
@@ -394,7 +449,7 @@
             this.parts.DisplayIcon = true;
             this.parts.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.parts.Lines = new string[0];
-            this.parts.Location = new System.Drawing.Point(11, 84);
+            this.parts.Location = new System.Drawing.Point(11, 113);
             this.parts.MaxLength = 32767;
             this.parts.Multiline = true;
             this.parts.Name = "parts";
@@ -924,38 +979,41 @@
             this.metroTextButton1.UseVisualStyleBackColor = true;
             this.metroTextButton1.Click += new System.EventHandler(this.metroTextButton1_Click);
             // 
-            // kryptonLabel4
+            // kno
             // 
-            this.kryptonLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel4.Location = new System.Drawing.Point(11, 189);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(35, 22);
-            this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel4.TabIndex = 493;
-            this.kryptonLabel4.Values.Text = "Qty:";
             // 
-            // kryptonLabel5
             // 
-            this.kryptonLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel5.Location = new System.Drawing.Point(11, 223);
-            this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(87, 22);
-            this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel5.TabIndex = 494;
-            this.kryptonLabel5.Values.Text = "Net Amount:";
             // 
-            // kryptonLabel3
-            // 
-            this.kryptonLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel3.Location = new System.Drawing.Point(13, 155);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(72, 22);
-            this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel3.TabIndex = 495;
-            this.kryptonLabel3.Values.Text = "Unit Price:";
+            this.kno.CustomButton.Image = null;
+            this.kno.CustomButton.Location = new System.Drawing.Point(156, 2);
+            this.kno.CustomButton.Name = "";
+            this.kno.CustomButton.Size = new System.Drawing.Size(23, 23);
+            this.kno.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.kno.CustomButton.TabIndex = 1;
+            this.kno.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.kno.CustomButton.UseSelectable = true;
+            this.kno.CustomButton.Visible = false;
+            this.kno.DisplayIcon = true;
+            this.kno.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.kno.Lines = new string[0];
+            this.kno.Location = new System.Drawing.Point(11, 11);
+            this.kno.MaxLength = 32767;
+            this.kno.Multiline = true;
+            this.kno.Name = "kno";
+            this.kno.PasswordChar = '\0';
+            this.kno.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.kno.SelectedText = "";
+            this.kno.SelectionLength = 0;
+            this.kno.SelectionStart = 0;
+            this.kno.ShowClearButton = true;
+            this.kno.Size = new System.Drawing.Size(182, 28);
+            this.kno.Style = MetroFramework.MetroColorStyle.Red;
+            this.kno.TabIndex = 497;
+            this.kno.UseCustomForeColor = true;
+            this.kno.UseSelectable = true;
+            this.kno.WaterMark = "k #";
+            this.kno.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.kno.WaterMarkFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // newQUform
             // 
@@ -1014,5 +1072,7 @@
         internal ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
         internal ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
         internal ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
+        internal MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton2;
+        internal MetroFramework.Controls.MetroTextBox kno;
     }
 }

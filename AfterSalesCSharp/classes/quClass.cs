@@ -158,6 +158,7 @@ namespace AfterSalesCSharp
                 BindingSource bs = new BindingSource();
                 string columns ="ID" +
                                 ",ASENO" +
+                                ",KNO" +
                                 ",ITEMNO as ITEM" +
                                 ",WDWLOC as [WINDOW / DOOR LOCATION]" +
                                 ",PARTS as [PARTS / ACCESSORIES USED]" +
@@ -193,7 +194,7 @@ namespace AfterSalesCSharp
             qufrm.itemGRID.Columns["QTY"].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             qufrm.itemGRID.Columns["NET PRICE"].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
         }
-        public void addnewitem(string ase, string item, string wdw,
+        public void addnewitem(string ase,string kno, string item, string wdw,
                                string parts, string unit, string qty,
                                string netamount)
         {
@@ -215,7 +216,7 @@ namespace AfterSalesCSharp
                 string str = "declare @id as integer = (select max(id)+1 from itemstb)" +
                             "insert into itemstb (ID" +
                             ",ASENO" +
-                            ",ITEMNO" +
+                            ",KNO,ITEMNO" +
                             ",WDWLOC" +
                             ",PARTS" +
                             ",UNITPRICE" +
@@ -223,7 +224,7 @@ namespace AfterSalesCSharp
                             ",NETPRICE)values" +
                             "(@id," +
                             "'" + ase + "'," +
-                            "'" + item + "'," +
+                            "'" + kno + "','" + item + "'," +
                             "'" + wdw + "'," +
                             "'" + parts + "'," +
                             "'" + unit + "'," +
@@ -241,7 +242,7 @@ namespace AfterSalesCSharp
                 sql.sqlcon.Close();
             }
         }
-        public void updateitem(string id, string item, string wdw,
+        public void updateitem(string id,string kno, string item, string wdw,
                                string parts, string unit, string qty,
                                string netamount)
         {
@@ -249,6 +250,7 @@ namespace AfterSalesCSharp
             {
                 sql.sqlcon.Open();
                 string str = "update itemstb set " +
+                              "kno='" + kno + "'," +
                               "itemno='" + item + "'," +
                               "wdwloc='" + wdw + "'," +
                               "parts='" + parts + "'," +

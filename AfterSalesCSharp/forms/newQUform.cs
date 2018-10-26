@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MetroFramework.Forms;
 using MetroFramework;
 using Microsoft.Reporting.WinForms;
+using AfterSalesCSharp.forms;
 
 namespace AfterSalesCSharp
 {
@@ -97,7 +98,7 @@ namespace AfterSalesCSharp
             cleanitementry();
          
             quClass q = new quClass(frm1,this);
-            q.addnewitem(aseno.Text,itemno.Text,wdwloc.Text,parts.Text,unitprice.Text,qty.Text,netamount.Text);
+            q.addnewitem(aseno.Text,kno.Text,itemno.Text,wdwloc.Text,parts.Text,unitprice.Text,qty.Text,netamount.Text);
             q.loaditems(aseno.Text);
         }
         public void cleanitementry()
@@ -115,13 +116,14 @@ namespace AfterSalesCSharp
             if ((itemGRID.RowCount>=0) && (e.RowIndex>=0))
             {
                 DataGridViewRow rows = itemGRID.Rows[e.RowIndex];
-                tempitemid = rows.Cells[0].Value.ToString();
-                itemno.Text = rows.Cells[2].Value.ToString();
-                wdwloc.Text= rows.Cells[3].Value.ToString();
-                parts.Text = rows.Cells[4].Value.ToString();
-                unitprice.Text = rows.Cells[5].Value.ToString();
-                qty.Text = rows.Cells[6].Value.ToString();
-                netamount.Text = rows.Cells[7].Value.ToString();
+                tempitemid = rows.Cells["ID"].Value.ToString();
+                itemno.Text = rows.Cells["ITEM"].Value.ToString();
+                kno.Text = rows.Cells["KNO"].Value.ToString();
+                wdwloc.Text= rows.Cells["WINDOW / DOOR LOCATION"].Value.ToString();
+                parts.Text = rows.Cells["PARTS / ACCESSORIES USED"].Value.ToString();
+                unitprice.Text = rows.Cells["UNIT PRICE"].Value.ToString();
+                qty.Text = rows.Cells["QTY"].Value.ToString();
+                netamount.Text = rows.Cells["NET PRICE"].Value.ToString();
             }
         }
 
@@ -129,7 +131,7 @@ namespace AfterSalesCSharp
         {
             cleanitementry();
             quClass q = new quClass(frm1, this);
-            q.updateitem(tempitemid, itemno.Text, wdwloc.Text, parts.Text, unitprice.Text, qty.Text, netamount.Text);
+            q.updateitem(tempitemid,kno.Text, itemno.Text, wdwloc.Text, parts.Text, unitprice.Text, qty.Text, netamount.Text);
             q.loaditems(aseno.Text);
         }
 
@@ -162,15 +164,22 @@ namespace AfterSalesCSharp
 
         private void metroTextButton1_Click(object sender, EventArgs e)
         {
-            quREPORTfrm qurep = new quREPORTfrm();
-            ReportParameter param1 = new ReportParameter("messagetxt", textBox1.Text);
-            ReportParameter param2 = new ReportParameter("scopeofworks", scopeofworks.Text);
-            ReportParameter param3 = new ReportParameter("note", note.Text);
+            try
+            {
+                quREPORTfrm qurep = new quREPORTfrm();
+                ReportParameter param1 = new ReportParameter("messagetxt", textBox1.Text);
+                ReportParameter param2 = new ReportParameter("scopeofworks", scopeofworks.Text);
+                ReportParameter param3 = new ReportParameter("note", note.Text);
 
-            qurep.reportViewer1.LocalReport.SetParameters(param1);
-            qurep.reportViewer1.LocalReport.SetParameters(param2);
-            qurep.reportViewer1.LocalReport.SetParameters(param3);
-            qurep.ShowDialog();
+                qurep.reportViewer1.LocalReport.SetParameters(param1);
+                qurep.reportViewer1.LocalReport.SetParameters(param2);
+                qurep.reportViewer1.LocalReport.SetParameters(param3);
+                qurep.ShowDialog();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(this, "" + ex.ToString() + "", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void othercharges_Leave(object sender, EventArgs e)
@@ -180,6 +189,13 @@ namespace AfterSalesCSharp
                 MetroMessageBox.Show(this, "Invalid Other Charges", "Numeric Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 othercharges.Focus();
             }
+        }
+
+        private void metroTextButton2_Click(object sender, EventArgs e)
+        {
+            itemfinderFRM a = new itemfinderFRM(this);
+            itemfinderFRM.pname = projectTXT.Text;
+            a.ShowDialog();
         }
     }
 }

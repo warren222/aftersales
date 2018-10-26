@@ -17,7 +17,9 @@ namespace AfterSalesCSharp
         static string userid = "kmdiadmin";
         static string password = "kmdiadmin";
         public static SqlConnection sqlcon = new SqlConnection("Data Source = '" + datasource + "';Network Library = 'DBMSSOCN';Initial Catalog='" + initialcatalog + "';User ID='" + userid + "';Password='" + password + "'");
+        public static SqlConnection sqlcon2 = new SqlConnection("Data Source = '121.58.229.248,49107';Network Library = 'DBMSSOCN';Initial Catalog='heretosave';User ID='" + userid + "';Password='" + password + "'");
         public static string sqlconstr = sqlcon.ConnectionString.ToString();
+        public static string sqlconstr2 = sqlcon2.ConnectionString.ToString();
         Form1 frm1;
         public sql(Form1 frm1val)
         {

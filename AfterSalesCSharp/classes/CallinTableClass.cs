@@ -142,7 +142,7 @@ namespace AfterSalesCSharp
 
             qabtn.Name = "qabtn";
             qabtn.HeaderText = "";
-            qabtn.Text = "convo";
+            qabtn.Text = "Q and A";
             qabtn.UseColumnTextForButtonValue = true;
             frm1.callinGRID.Columns.Insert(21, qabtn);
         }
