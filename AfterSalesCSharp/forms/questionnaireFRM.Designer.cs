@@ -39,24 +39,24 @@
             this.questionTXT = new MetroFramework.Controls.MetroTextBox();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.question = new MetroFramework.Controls.MetroTextBox();
-            this.answerGRID = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.answerTXT = new MetroFramework.Controls.MetroTextBox();
             this.aitemTXT = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextButton1 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.metroTextButton2 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
-            this.metroTextButton3 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.metroTextButton1 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.metroTextButton4 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.metroTextButton3 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.answerGRID = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.questionGRID)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
-            this.metroTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.answerGRID)).BeginInit();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.metroTabPage2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.answerGRID)).BeginInit();
             this.SuspendLayout();
             // 
             // refreshBTN
@@ -248,7 +248,7 @@
             this.metroTabControl1.ItemSize = new System.Drawing.Size(150, 34);
             this.metroTabControl1.Location = new System.Drawing.Point(20, 60);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(800, 470);
             this.metroTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Red;
@@ -271,6 +271,21 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.itemTXT);
+            this.panel2.Controls.Add(this.deleteBTN);
+            this.panel2.Controls.Add(this.updateBTN);
+            this.panel2.Controls.Add(this.refreshBTN);
+            this.panel2.Controls.Add(this.questionTXT);
+            this.panel2.Controls.Add(this.addBTN);
+            this.panel2.Location = new System.Drawing.Point(13, 13);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(778, 99);
+            this.panel2.TabIndex = 472;
+            // 
             // metroTabPage2
             // 
             this.metroTabPage2.Controls.Add(this.panel1);
@@ -286,6 +301,22 @@
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.question);
+            this.panel1.Controls.Add(this.answerTXT);
+            this.panel1.Controls.Add(this.aitemTXT);
+            this.panel1.Controls.Add(this.metroTextButton2);
+            this.panel1.Controls.Add(this.metroTextButton1);
+            this.panel1.Controls.Add(this.metroTextButton4);
+            this.panel1.Controls.Add(this.metroTextButton3);
+            this.panel1.Location = new System.Drawing.Point(10, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(777, 145);
+            this.panel1.TabIndex = 480;
             // 
             // question
             // 
@@ -324,50 +355,6 @@
             this.question.WaterMark = "Question";
             this.question.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.question.WaterMarkFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // answerGRID
-            // 
-            this.answerGRID.AllowUserToAddRows = false;
-            this.answerGRID.AllowUserToDeleteRows = false;
-            this.answerGRID.AllowUserToOrderColumns = true;
-            this.answerGRID.AllowUserToResizeColumns = false;
-            this.answerGRID.AllowUserToResizeRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.answerGRID.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.answerGRID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.answerGRID.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.answerGRID.ColumnHeadersHeight = 30;
-            this.answerGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.answerGRID.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.answerGRID.Location = new System.Drawing.Point(10, 163);
-            this.answerGRID.MultiSelect = false;
-            this.answerGRID.Name = "answerGRID";
-            this.answerGRID.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Silver;
-            this.answerGRID.ReadOnly = true;
-            this.answerGRID.RowHeadersVisible = false;
-            this.answerGRID.RowHeadersWidth = 40;
-            this.answerGRID.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.answerGRID.RowTemplate.Height = 40;
-            this.answerGRID.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.answerGRID.Size = new System.Drawing.Size(777, 262);
-            this.answerGRID.StateCommon.Background.Color1 = System.Drawing.Color.WhiteSmoke;
-            this.answerGRID.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
-            this.answerGRID.StateCommon.DataCell.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.answerGRID.StateCommon.DataCell.Content.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.answerGRID.StateCommon.DataCell.Content.Padding = new System.Windows.Forms.Padding(-1, 10, -1, 10);
-            this.answerGRID.StateCommon.HeaderColumn.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Dashed;
-            this.answerGRID.StateCommon.HeaderColumn.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.answerGRID.StateCommon.HeaderColumn.Border.Width = 0;
-            this.answerGRID.StateCommon.HeaderColumn.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.answerGRID.StateCommon.HeaderColumn.Content.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerGRID.StateCommon.HeaderColumn.Content.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.answerGRID.TabIndex = 478;
-            this.answerGRID.SelectionChanged += new System.EventHandler(this.answerGRID_SelectionChanged);
             // 
             // answerTXT
             // 
@@ -441,6 +428,22 @@
             this.aitemTXT.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.aitemTXT.WaterMarkFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // metroTextButton2
+            // 
+            this.metroTextButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroTextButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroTextButton2.Image = null;
+            this.metroTextButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroTextButton2.Location = new System.Drawing.Point(661, 104);
+            this.metroTextButton2.Name = "metroTextButton2";
+            this.metroTextButton2.Size = new System.Drawing.Size(98, 30);
+            this.metroTextButton2.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroTextButton2.TabIndex = 472;
+            this.metroTextButton2.Text = "refresh";
+            this.metroTextButton2.UseSelectable = true;
+            this.metroTextButton2.UseVisualStyleBackColor = true;
+            this.metroTextButton2.Click += new System.EventHandler(this.metroTextButton2_Click);
+            // 
             // metroTextButton1
             // 
             this.metroTextButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -457,21 +460,21 @@
             this.metroTextButton1.UseVisualStyleBackColor = true;
             this.metroTextButton1.Click += new System.EventHandler(this.metroTextButton1_Click_1);
             // 
-            // metroTextButton2
+            // metroTextButton4
             // 
-            this.metroTextButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroTextButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroTextButton2.Image = null;
-            this.metroTextButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.metroTextButton2.Location = new System.Drawing.Point(661, 104);
-            this.metroTextButton2.Name = "metroTextButton2";
-            this.metroTextButton2.Size = new System.Drawing.Size(98, 30);
-            this.metroTextButton2.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroTextButton2.TabIndex = 472;
-            this.metroTextButton2.Text = "refresh";
-            this.metroTextButton2.UseSelectable = true;
-            this.metroTextButton2.UseVisualStyleBackColor = true;
-            this.metroTextButton2.Click += new System.EventHandler(this.metroTextButton2_Click);
+            this.metroTextButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroTextButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroTextButton4.Image = null;
+            this.metroTextButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroTextButton4.Location = new System.Drawing.Point(557, 104);
+            this.metroTextButton4.Name = "metroTextButton4";
+            this.metroTextButton4.Size = new System.Drawing.Size(98, 30);
+            this.metroTextButton4.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroTextButton4.TabIndex = 473;
+            this.metroTextButton4.Text = "delete";
+            this.metroTextButton4.UseSelectable = true;
+            this.metroTextButton4.UseVisualStyleBackColor = true;
+            this.metroTextButton4.Click += new System.EventHandler(this.metroTextButton4_Click);
             // 
             // metroTextButton3
             // 
@@ -489,51 +492,49 @@
             this.metroTextButton3.UseVisualStyleBackColor = true;
             this.metroTextButton3.Click += new System.EventHandler(this.metroTextButton3_Click_1);
             // 
-            // metroTextButton4
+            // answerGRID
             // 
-            this.metroTextButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroTextButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroTextButton4.Image = null;
-            this.metroTextButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.metroTextButton4.Location = new System.Drawing.Point(557, 104);
-            this.metroTextButton4.Name = "metroTextButton4";
-            this.metroTextButton4.Size = new System.Drawing.Size(98, 30);
-            this.metroTextButton4.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroTextButton4.TabIndex = 473;
-            this.metroTextButton4.Text = "delete";
-            this.metroTextButton4.UseSelectable = true;
-            this.metroTextButton4.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.answerGRID.AllowUserToAddRows = false;
+            this.answerGRID.AllowUserToDeleteRows = false;
+            this.answerGRID.AllowUserToOrderColumns = true;
+            this.answerGRID.AllowUserToResizeColumns = false;
+            this.answerGRID.AllowUserToResizeRows = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.answerGRID.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.answerGRID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.question);
-            this.panel1.Controls.Add(this.answerTXT);
-            this.panel1.Controls.Add(this.aitemTXT);
-            this.panel1.Controls.Add(this.metroTextButton2);
-            this.panel1.Controls.Add(this.metroTextButton1);
-            this.panel1.Controls.Add(this.metroTextButton4);
-            this.panel1.Controls.Add(this.metroTextButton3);
-            this.panel1.Location = new System.Drawing.Point(10, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(777, 145);
-            this.panel1.TabIndex = 480;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.itemTXT);
-            this.panel2.Controls.Add(this.deleteBTN);
-            this.panel2.Controls.Add(this.updateBTN);
-            this.panel2.Controls.Add(this.refreshBTN);
-            this.panel2.Controls.Add(this.questionTXT);
-            this.panel2.Controls.Add(this.addBTN);
-            this.panel2.Location = new System.Drawing.Point(13, 13);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(778, 99);
-            this.panel2.TabIndex = 472;
+            this.answerGRID.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.answerGRID.ColumnHeadersHeight = 30;
+            this.answerGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.answerGRID.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.answerGRID.Location = new System.Drawing.Point(10, 163);
+            this.answerGRID.MultiSelect = false;
+            this.answerGRID.Name = "answerGRID";
+            this.answerGRID.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Silver;
+            this.answerGRID.ReadOnly = true;
+            this.answerGRID.RowHeadersVisible = false;
+            this.answerGRID.RowHeadersWidth = 40;
+            this.answerGRID.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.answerGRID.RowTemplate.Height = 40;
+            this.answerGRID.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.answerGRID.Size = new System.Drawing.Size(777, 262);
+            this.answerGRID.StateCommon.Background.Color1 = System.Drawing.Color.WhiteSmoke;
+            this.answerGRID.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            this.answerGRID.StateCommon.DataCell.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.answerGRID.StateCommon.DataCell.Content.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.answerGRID.StateCommon.DataCell.Content.Padding = new System.Windows.Forms.Padding(-1, 10, -1, 10);
+            this.answerGRID.StateCommon.HeaderColumn.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Dashed;
+            this.answerGRID.StateCommon.HeaderColumn.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.answerGRID.StateCommon.HeaderColumn.Border.Width = 0;
+            this.answerGRID.StateCommon.HeaderColumn.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.answerGRID.StateCommon.HeaderColumn.Content.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerGRID.StateCommon.HeaderColumn.Content.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.answerGRID.TabIndex = 478;
+            this.answerGRID.SelectionChanged += new System.EventHandler(this.answerGRID_SelectionChanged);
             // 
             // questionnaireFRM
             // 
@@ -549,10 +550,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.questionGRID)).EndInit();
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
-            this.metroTabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.answerGRID)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.metroTabPage2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.answerGRID)).EndInit();
             this.ResumeLayout(false);
 
         }

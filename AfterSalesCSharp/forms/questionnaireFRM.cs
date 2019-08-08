@@ -303,5 +303,10 @@ namespace AfterSalesCSharp
             frm.storeqa();
             frm.loadasnwer();
         }
+
+        private void metroTextButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
